@@ -1,0 +1,32 @@
+{
+    "name": "aoding9/dcat-nav-open-link",
+    "alias": "",
+    "description": "Description...",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/aoding9/dcat-nav-open-link",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "your name",
+            "email": "your email"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aoding9\\Dcat\\Nav\\OpenLink\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Aoding9\\Dcat\\Nav\\OpenLink\\DcatNavOpenLinkServiceProvider",
+        "laravel": {
+            "providers": [
+                "Aoding9\\Dcat\\Nav\\OpenLink\\DcatNavOpenLinkServiceProvider"
+            ]
+        }
+    }
+}
