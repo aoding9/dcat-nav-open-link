@@ -1,13 +1,5 @@
-<div class="extension-demo">
-	Welcome to dcat-admin !
-</div>
 
-<style>
-	.extension-demo {
-		color: @primary;
-	}
-</style>
+<li>
+    <a href="javascript:;" onclick="window.open('{{env('APP_URL')}}' )" class="mx-3px"><i class="feather icon-home"></i>首页</a>
 
-<script require="@aoding9.dcat-nav-open-link">
-	$('.extension-demo').extensionDemo();
-</script>
+</li>

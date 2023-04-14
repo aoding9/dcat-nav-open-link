@@ -4,6 +4,7 @@ namespace Aoding9\Dcat\Nav\OpenLink;
 
 use Dcat\Admin\Extend\ServiceProvider;
 use Dcat\Admin\Admin;
+use Dcat\Admin\Layout\Navbar;
 
 class DcatNavOpenLinkServiceProvider extends ServiceProvider
 {
@@ -22,9 +23,11 @@ class DcatNavOpenLinkServiceProvider extends ServiceProvider
 	public function init()
 	{
 		parent::init();
-
+        Admin::navbar(function (Navbar $navbar) {
+            $navbar->right(Admin::view('aoding9.dcat-nav-open-link::index'));
+        });
 		//
-		
+
 	}
 
 	public function settingForm()
